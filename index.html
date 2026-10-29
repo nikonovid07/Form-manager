@@ -310,6 +310,10 @@
         const splashScreen = document.getElementById('screen-splash');
         const loginScreen = document.getElementById('screen-login');
         const dashboardScreen = document.getElementById('screen-dashboard');
-
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
         function hideAll() {
             splashScr
